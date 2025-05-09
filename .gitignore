@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# CDK
+.cdk.staging
+cdk.out/
+cdk.context.json
+*.tabl.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.classpath
+.settings/
+
+# AWS
+.aws-sam/
+samconfig.toml
+.chalice/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test directories and files
+s3-bucket-test/
+simple-test/
+**/test_*.py
+**/direct_test.py
+**/deploy_test.py
+**/cdk_test.py
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
+
+# Node.js (for CDK)
+node_modules/
+package-lock.json# Additional exclusions
+zacks-cdk-library/zacks_cdk_lib/zacks_cdk_library.egg-info/

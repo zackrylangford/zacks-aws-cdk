@@ -11,31 +11,16 @@ This repository contains a custom AWS CDK library that provides:
 - Reusable patterns for common architectures
 - Simplified API for faster development
 
-## Getting Started
+## Installation
 
-### Prerequisites
+```bash
+# Clone the repository
+git clone https://github.com/zackrylangford/zacks-cdk-library.git
 
-- Python 3.6+
-- AWS CDK v2
-- AWS CLI configured with appropriate credentials
-
-### Installation
-
-1. Clone this repository:
-   ```
-   git clone https://github.com/zackrylangford/zacks-cdk-library.git
-   ```
-
-2. Install the library in development mode:
-   ```
-   cd zacks-cdk-library
-   pip install -e .
-   ```
-
-3. Install development dependencies:
-   ```
-   pip install -r requirements-dev.txt
-   ```
+# Install the library in development mode
+cd zacks-cdk-library
+pip install -e .
+```
 
 ## Library Structure
 
@@ -46,11 +31,7 @@ This repository contains a custom AWS CDK library that provides:
 - `zacks_cdk_lib/security/` - Security resources (IAM, Security Groups)
 - `zacks_cdk_lib/patterns/` - Higher-level architectural patterns
 
-## Usage Examples
-
-See `example_usage.py` for a complete example of how to use this library.
-
-### Basic Example
+## Usage Example
 
 ```python
 from aws_cdk import App, Stack
@@ -80,23 +61,13 @@ class MyStack(Stack):
         
         # Grant the Lambda function access to the bucket
         bucket.grant_read_write(lambda_fn.function)
-        
-        # Create a serverless API
-        api = ServerlessApi(
-            self,
-            "MyApi",
-            lambda_code_path="./api",
-            lambda_handler="app.handler",
-        )
-
-app = App()
-MyStack(app, "ZacksStack")
-app.synth()
 ```
 
-## Contributing
+## Prerequisites
 
-Feel free to extend this library with additional constructs and patterns as needed for your projects.
+- Python 3.6+
+- AWS CDK v2
+- AWS CLI configured with appropriate credentials
 
 ## License
 

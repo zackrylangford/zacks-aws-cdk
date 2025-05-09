@@ -1,0 +1,4 @@
+# Git commands to commit and push changes:
+git add .
+git commit -m "Rename library to zacks-cdk-library and add proper repository structure"
+git push origin main

@@ -1,0 +1,17 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Python files
+*.py text diff=python
+
+# Documentation
+*.md text
+*.txt text
+LICENSE text
+
+# Exclude from language statistics
+simple-test/* linguist-vendored
+s3-bucket-test/* linguist-vendored
+
+# Exclude generated files
+*.egg-info/* linguist-generated

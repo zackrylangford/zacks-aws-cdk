@@ -92,7 +92,7 @@ class StandardEC2Instance(Construct):
         )
         
         # Add standard tags
-        Tags.of(self.instance).add("ManagedBy", "CDK")
+        Tags.of(self.instance).add("ManagedBy", "ZacksCDK")
         
     def add_security_group_rule(self, peer, port, description=None):
         """Add an ingress rule to the instance's security group"""

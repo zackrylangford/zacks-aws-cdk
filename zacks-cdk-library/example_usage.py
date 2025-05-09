@@ -8,12 +8,12 @@ from aws_cdk import (
 from constructs import Construct
 
 # Import your custom library
-from my_cdk_lib.compute import LambdaFunction, StandardEC2Instance
-from my_cdk_lib.storage import SecureS3Bucket
-from my_cdk_lib.database import EnhancedDynamoTable
-from my_cdk_lib.networking import StandardVpc
-from my_cdk_lib.security import CommonSecurityGroups
-from my_cdk_lib.patterns import ServerlessApi, StaticWebsite
+from zacks_cdk_lib.compute import LambdaFunction, StandardEC2Instance
+from zacks_cdk_lib.storage import SecureS3Bucket
+from zacks_cdk_lib.database import EnhancedDynamoTable
+from zacks_cdk_lib.networking import StandardVpc
+from zacks_cdk_lib.security import CommonSecurityGroups
+from zacks_cdk_lib.patterns import ServerlessApi, StaticWebsite
 
 
 class ExampleStack(Stack):
@@ -125,5 +125,5 @@ class ExampleStack(Stack):
 
 
 app = App()
-ExampleStack(app, "ExampleStack")
+ExampleStack(app, "ZacksExampleStack")
 app.synth()

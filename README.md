@@ -1,4 +1,4 @@
-# My Personal AWS CDK Library
+# Zack's AWS CDK Library
 
 A collection of reusable AWS CDK constructs for quickly provisioning and managing cloud resources using Python.
 
@@ -23,12 +23,12 @@ This repository contains a custom AWS CDK library that provides:
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/my-cdk-lib.git
+   git clone https://github.com/zackrylangford/zacks-cdk-library.git
    ```
 
 2. Install the library in development mode:
    ```
-   cd my-cdk-lib
+   cd zacks-cdk-library
    pip install -e .
    ```
 
@@ -39,12 +39,12 @@ This repository contains a custom AWS CDK library that provides:
 
 ## Library Structure
 
-- `my_cdk_lib/compute/` - Compute resources (Lambda, EC2)
-- `my_cdk_lib/storage/` - Storage resources (S3, EFS)
-- `my_cdk_lib/database/` - Database resources (DynamoDB, RDS)
-- `my_cdk_lib/networking/` - Networking resources (VPC, subnets)
-- `my_cdk_lib/security/` - Security resources (IAM, Security Groups)
-- `my_cdk_lib/patterns/` - Higher-level architectural patterns
+- `zacks_cdk_lib/compute/` - Compute resources (Lambda, EC2)
+- `zacks_cdk_lib/storage/` - Storage resources (S3, EFS)
+- `zacks_cdk_lib/database/` - Database resources (DynamoDB, RDS)
+- `zacks_cdk_lib/networking/` - Networking resources (VPC, subnets)
+- `zacks_cdk_lib/security/` - Security resources (IAM, Security Groups)
+- `zacks_cdk_lib/patterns/` - Higher-level architectural patterns
 
 ## Usage Examples
 
@@ -55,9 +55,9 @@ See `example_usage.py` for a complete example of how to use this library.
 ```python
 from aws_cdk import App, Stack
 from constructs import Construct
-from my_cdk_lib.compute import LambdaFunction
-from my_cdk_lib.storage import SecureS3Bucket
-from my_cdk_lib.patterns import ServerlessApi
+from zacks_cdk_lib.compute import LambdaFunction
+from zacks_cdk_lib.storage import SecureS3Bucket
+from zacks_cdk_lib.patterns import ServerlessApi
 
 class MyStack(Stack):
     def __init__(self, scope: Construct, id: str, **kwargs) -> None:
@@ -90,7 +90,7 @@ class MyStack(Stack):
         )
 
 app = App()
-MyStack(app, "MyStack")
+MyStack(app, "ZacksStack")
 app.synth()
 ```
 
